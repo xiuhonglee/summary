@@ -1,0 +1,19 @@
+{
+    "name": "docs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs"
+    },
+    "keywords": ["document", "vue", "canvas"],
+    "author": "xiuhong",
+    "license": "ISC",
+    "devDependencies": {
+        "vuepress": "^0.10.0"
+    }
+}
