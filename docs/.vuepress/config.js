@@ -1,41 +1,47 @@
 module.exports = {
-    title: 'vuepress',
-    description: 'Just playing around',
+    title: '互动游戏',
+    description: 'Canvas webGL CSS3',
     themeConfig: {
+        editLinks: true,
+        docsDir: 'docs',
         nav: [{
-                text: 'Home',
+                text: '首页',
                 link: '/'
             },
             {
-                text: 'Guide',
-                link: '/guide/'
+                text: 'Canvas',
+                items: [{
+                    text: '图形绘制',
+                    link: '/Canvas_ch01/'
+                }, {
+                    text: '文本',
+                    link: '/Canvas_ch02/'
+                }],
             },
             {
-                text: 'External',
+                text: 'webGL',
+                link: '/webGL/'
+            },
+            {
+                text: 'CSS3',
+                link: '/CSS3/'
+            },
+            {
+                text: '游戏引擎',
                 items: [{
-                        text: 'Chinese',
-                        link: '/language/chinese'
+                        text: 'egret',
+                        link: '/engines/egret/'
                     },
                     {
-                        text: 'Japanese',
-                        link: '/language/japanese'
+                        text: 'threejs',
+                        link: '/engines/threejs/'
                     }
                 ]
             }
         ],
         sidebar: {
-            '/guide/': genSidebarConfig('指南')
+            '/Canvas_ch01/': ['d01', 'd02', 'd03', 'd04', 'd05', 'd06', 'd07', 'd08', 'd09', 'd10'],
+            '/Canvas_ch02/': ['t01', 't02', 't03']
         }
     }
-}
-
-function genSidebarConfig(title) {
-    return [{
-        title,
-        collapsable: false,
-        children: [
-            '',
-            'getting-started'
-        ]
-    }]
 }
