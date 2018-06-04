@@ -4,6 +4,8 @@ module.exports = {
     themeConfig: {
         editLinks: true,
         docsDir: 'docs',
+        lastUpdated: '上次更新',
+        editLinks: true,
         nav: [{
                 text: '首页',
                 link: '/'
