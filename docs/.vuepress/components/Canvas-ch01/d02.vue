@@ -12,40 +12,52 @@ export default {
     let canvas = this.$refs.canvas;
     let ctx = canvas.getContext("2d");
     this.ctx = ctx;
-    this.drawCoordinate(this.ctx, "#666", 10, 10);
-    this.drawRect( ctx, "#ff5777", this.ctx.canvas.width / 2, this.ctx.canvas.height / 2
-    );
-    this.drawCenterLines(this.ctx, "#ffff00");
+    this.drawMiddleLine(this.ctx);
+    this.drawRect1(this.ctx);
+    this.drawRect2(this.ctx);
+    this.drawInfo(this.ctx);
   },
 
   methods: {
-    drawRect(ctx, color, width, height) {
-      ctx.fillStyle = color;
-      ctx.lineWidth = 0.5;
+    drawInfo(ctx) {
       ctx.save();
-      ctx.translate(
-        canvas.width / 2 - width / 2,
-        canvas.height / 2 - height / 2
-      );
-      ctx.fillRect(0, 0, width, height);
+      ctx.fillStyle = "#ffffff";
+      ctx.font = "30px serif";
+      ctx.fillText( "使用 ctx.beginPath", ctx.canvas.width / 2, ctx.canvas.height / 4);
+      ctx.fillText( "未使用 ctx.beginPath", ctx.canvas.width / 2, ctx.canvas.height / 4 * 3);
       ctx.restore();
     },
 
-    /**
-     * 画中心线
-     */
-    drawCenterLines(ctx, color) {
-      ctx.strokeStyle = color;
+    drawMiddleLine(ctx) {
+      ctx.save();
+      ctx.strokeStyle = "#ffffff";
+      ctx.moveTo(0, ctx.canvas.height / 2);
       ctx.lineWidth = 0.5;
-
+      ctx.lineTo(ctx.canvas.width, ctx.canvas.height / 2);
+      ctx.stroke();
+      ctx.restore();
+    },
+    drawRect1(ctx) {
+      ctx.strokeStyle = "#ff0000";
       ctx.beginPath();
-      ctx.moveTo(ctx.canvas.width / 2, 0);
-      ctx.lineTo(ctx.canvas.width / 2, ctx.canvas.height);
+      ctx.rect(30, 30, 100, 100);
       ctx.stroke();
 
+      ctx.strokeStyle = "#00ff00";
+        ctx.beginPath();
+      ctx.rect(200, 30, 100, 100);
+      ctx.stroke();
+    },
+
+    drawRect2(ctx) {
+      ctx.strokeStyle = "#ff0000";
       ctx.beginPath();
-      ctx.moveTo(0, ctx.canvas.height / 2);
-      ctx.lineTo(ctx.canvas.width, ctx.canvas.height / 2);
+      ctx.rect(30, 180, 100, 100);
+      ctx.stroke();
+
+      ctx.strokeStyle = "#00ff00";
+    //   ctx.beginPath();
+      ctx.rect(200, 180, 100, 100);
       ctx.stroke();
     },
     /**

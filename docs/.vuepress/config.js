@@ -27,18 +27,6 @@ module.exports = {
             {
                 text: 'CSS3',
                 link: '/CSS3/'
-            },
-            {
-                text: '游戏引擎',
-                items: [{
-                        text: 'egret',
-                        link: '/engines/egret/'
-                    },
-                    {
-                        text: 'threejs',
-                        link: '/engines/threejs/'
-                    }
-                ]
             }
         ],
         sidebar: {
