@@ -71,24 +71,24 @@ p {
   margin-top: 20px;
 }
 
-.ctrls {
+.c02 .ctrls {
   margin-left: 20px;
 }
 
-.camera {
+.c02 .camera {
   width: 200px;
   height: 200px;
   perspective: 500px;
   perspective-origin: center center;
 }
 
-.space {
+.c02 .space {
   width: 100%;
   height: 100%;
   border: 1px dashed #f00;
   transform-style: preserve-3d;
 }
-.box {
+.c02 .box {
   width: 100px;
   height: 100px;
   background: #f55777;

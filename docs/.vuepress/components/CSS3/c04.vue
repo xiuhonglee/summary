@@ -33,6 +33,7 @@ export default {
 .c04 {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .c04 .camera {
   width: 200px;
@@ -46,7 +47,6 @@ export default {
   position: relative;
   width: 100%;
   height: 100%;
-  border: 1px dashed #000;
   transform-style: preserve-3d;
   transform-origin: center center 29px;
 }
