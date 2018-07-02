@@ -34,7 +34,7 @@ export default {
   display: flex;
   flex-direction: row;
 }
-.camera {
+.c04 .camera {
   width: 200px;
   height: 200px;
   margin-right: 20px;
@@ -42,7 +42,7 @@ export default {
   perspective-origin: center center;
 }
 
-.space {
+.c04 .space {
   position: relative;
   width: 100%;
   height: 100%;
@@ -51,7 +51,7 @@ export default {
   transform-origin: center center 29px;
 }
 
-.space div {
+.c04 .space div {
   position: absolute;
   width: 0;
   height: 0;
@@ -73,16 +73,16 @@ export default {
 }
 
 .box3 {
-  border-color: transparent transparent #00f;
-  transform-origin: right bottom;
-  transform: translateX(50px) translateY(50px) rotateY(60deg) rotateX(19.5deg);
+  border-color: transparent transparent #0f0;
+  transform-origin: left bottom;
+  transform: translateX(50px) translateY(50px) rotateY(-60deg) rotateX(19.5deg);
   transition: 0.2s all;
 }
 
 .box4 {
-  border-color: transparent transparent #0f0;
-  transform-origin: left bottom;
-  transform: translateX(50px) translateY(50px) rotateY(-60deg) rotateX(19.5deg);
+  border-color: transparent transparent #00f;
+  transform-origin: right bottom;
+  transform: translateX(50px) translateY(50px) rotateY(60deg) rotateX(19.5deg);
 }
 </style>
 
