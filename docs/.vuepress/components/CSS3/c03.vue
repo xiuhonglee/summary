@@ -17,6 +17,7 @@
             <p><span>border-color bottom</span><input type="radio" name="bcbottom" value="transparent" v-model="bcbottom">透明<input type="radio" checked name="bcbottom" v-model="bcbottom" value="#00f">蓝色</p>
             <p><span>border-color left</span><input type="radio" name="bcleft" value="transparent" v-model="bcleft">透明<input type="radio" checked name="bcleft" v-model="bcleft" value="#ff0">黄色</p>
             <div class="type">
+                <button @click="reset">重置</button>
                 <button @click="pthree">正三角形</button>
                 <button @click="nthree">倒三角</button>
                 <button @click="pTrapezoidal">梯形</button>
@@ -43,6 +44,18 @@ export default {
     };
   },
   methods: {
+    reset() {
+      this.width = 50;
+      this.height = 50;
+      this.borderTop = 50;
+      this.borderRight = 50;
+      this.borderBottom = 50;
+      this.borderLeft = 50;
+      this.bctop = "#f00";
+      this.bcright = "#0f0";
+      this.bcbottom = "#00f";
+      this.bcleft = "#ff0";
+    },
     pthree() {
       this.width = 0;
       this.height = 0;
@@ -120,6 +133,7 @@ export default {
   border-style: solid;
   border-width: 0;
   border-color: #f00 #0f0 #00f #ff0;
+  transition: 3s all;
 }
 .controls {
   display: flex;
@@ -147,6 +161,6 @@ export default {
   text-align: right;
 }
 .color p span {
-    width: 160px;
+  width: 160px;
 }
 </style>
