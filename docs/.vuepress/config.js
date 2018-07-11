@@ -1,4 +1,5 @@
 module.exports = {
+    base: '/',
     title: '互动游戏',
     description: 'Canvas webGL CSS3',
     themeConfig: {
