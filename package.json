@@ -10,10 +10,14 @@
         "docs:dev": "vuepress dev docs",
         "docs:build": "vuepress build docs"
     },
-    "keywords": ["document", "vue", "canvas"],
+    "keywords": [
+        "document",
+        "vue",
+        "canvas"
+    ],
     "author": "xiuhong",
     "license": "ISC",
     "devDependencies": {
-        "vuepress": "^0.10.0"
+        "vuepress": "^0.11.0"
     }
 }

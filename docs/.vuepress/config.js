@@ -2,6 +2,9 @@ module.exports = {
     base: '/',
     title: '互动游戏',
     description: 'Canvas webGL CSS3',
+    markdown: {
+        lineNumbers: true
+    },
     themeConfig: {
         editLinks: true,
         docsDir: 'docs',
@@ -28,12 +31,17 @@ module.exports = {
             {
                 text: 'CSS3',
                 link: '/CSS3/c02'
+            },
+            {
+                text: 'nginx',
+                link: '/Nginx/n01'
             }
         ],
         sidebar: {
             '/Canvas_ch01/': ['d01', 'd02', 'd03', 'd04', 'd05', 'd06', 'd07', 'd08', 'd09', 'd10'],
             '/Canvas_ch02/': ['t01', 't02', 't03'],
-            '/CSS3/': ['c02', 'c03', 'c04', 'c05']
+            '/CSS3/': ['c02', 'c03', 'c04', 'c05'],
+            '/Nginx/': ['n01', 'n02', 'n03', 'n04']
         }
     }
 }
