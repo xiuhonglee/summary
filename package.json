@@ -19,5 +19,10 @@
     "license": "ISC",
     "devDependencies": {
         "vuepress": "^0.11.0"
+    },
+    "dependencies": {
+        "global": "^4.3.2",
+        "http-server": "^0.11.1",
+        "markdown-it-html5-embed": "^1.0.0"
     }
 }

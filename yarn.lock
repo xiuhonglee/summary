@@ -1835,6 +1835,11 @@ colormin@^1.0.5:
     css-color-names "0.0.4"
     has "^1.0.1"
 
+colors@1.0.3:
+  version "1.0.3"
+  resolved "http://npm.f2e.mogujie.org/colors/download/colors-1.0.3.tgz#0433f44d809680fdeb60ed260f1b0c262e82a40b"
+  integrity sha1-BDP0TYCWgP3rYO0mDxsMJi6CpAs=
+
 colors@~1.1.2:
   version "1.1.2"
   resolved "http://npm.f2e.mogujie.org/colors/download/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
@@ -2001,6 +2006,11 @@ core-util-is@~1.0.0:
   version "1.0.2"
   resolved "http://npm.f2e.mogujie.org/core-util-is/download/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
+
+corser@~2.0.0:
+  version "2.0.1"
+  resolved "http://npm.f2e.mogujie.org/corser/download/corser-2.0.1.tgz#8eda252ecaab5840dcd975ceb90d9370c819ff87"
+  integrity sha1-jtolLsqrWEDc2XXOuQ2TcMgZ/4c=
 
 cosmiconfig@^4.0.0:
   version "4.0.0"
@@ -2242,6 +2252,13 @@ debug@*:
   dependencies:
     ms "^2.1.1"
 
+debug@=3.1.0, debug@~3.1.0:
+  version "3.1.0"
+  resolved "http://npm.f2e.mogujie.org/debug/download/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  integrity sha1-W7WgZyYotkFJVmuhaBnmFRjGcmE=
+  dependencies:
+    ms "2.0.0"
+
 debug@^2.1.2, debug@^2.2.0, debug@^2.3.3, debug@^2.6.1, debug@^2.6.3, debug@^2.6.8:
   version "2.6.9"
   resolved "http://npm.f2e.mogujie.org/debug/download/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -2255,13 +2272,6 @@ debug@^3.1.0:
   integrity sha1-6D0X3hbYp++3cX7b5fsQE17uYps=
   dependencies:
     ms "^2.1.1"
-
-debug@~3.1.0:
-  version "3.1.0"
-  resolved "http://npm.f2e.mogujie.org/debug/download/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
-  integrity sha1-W7WgZyYotkFJVmuhaBnmFRjGcmE=
-  dependencies:
-    ms "2.0.0"
 
 decamelize-keys@^1.0.0:
   version "1.1.0"
@@ -2474,6 +2484,16 @@ duplexify@^3.4.2, duplexify@^3.6.0:
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
 
+ecstatic@^3.0.0:
+  version "3.3.0"
+  resolved "http://npm.f2e.mogujie.org/ecstatic/download/ecstatic-3.3.0.tgz#91cd417d152abf85b37b1ab3ebf3bd25cdc64e80"
+  integrity sha1-kc1BfRUqv4Wzexqz6/O9Jc3GToA=
+  dependencies:
+    he "^1.1.1"
+    mime "^1.6.0"
+    minimist "^1.1.0"
+    url-join "^2.0.5"
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "http://npm.f2e.mogujie.org/ee-first/download/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -2645,6 +2665,11 @@ esutils@^2.0.2:
   version "2.0.2"
   resolved "http://npm.f2e.mogujie.org/esutils/download/esutils-2.0.2.tgz#0abf4f1caa5bcb1f7a9d8acc6dea4faaa04bac9b"
   integrity sha1-Cr9PHKpbyx96nYrMbepPqqBLrJs=
+
+eventemitter3@^3.0.0:
+  version "3.1.0"
+  resolved "http://npm.f2e.mogujie.org/eventemitter3/download/eventemitter3-3.1.0.tgz#090b4d6cdbd645ed10bf750d4b5407942d7ba163"
+  integrity sha1-CQtNbNvWRe0Qv3UNS1QHlC17oWM=
 
 events@^1.0.0, events@^1.1.0:
   version "1.1.1"
@@ -2844,6 +2869,13 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.1"
     readable-stream "^2.0.4"
+
+follow-redirects@^1.0.0:
+  version "1.5.9"
+  resolved "http://npm.f2e.mogujie.org/follow-redirects/download/follow-redirects-1.5.9.tgz#c9ed9d748b814a39535716e531b9196a845d89c6"
+  integrity sha1-ye2ddIuBSjlTVxblMbkZaoRdicY=
+  dependencies:
+    debug "=3.1.0"
 
 for-in@^1.0.1, for-in@^1.0.2:
   version "1.0.2"
@@ -3196,7 +3228,7 @@ he@1.1.x:
   resolved "http://npm.f2e.mogujie.org/he/download/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
   integrity sha1-k0EP0hsAlzUVH4howvJx80J+I/0=
 
-he@^1.1.0:
+he@^1.1.0, he@^1.1.1:
   version "1.2.0"
   resolved "http://npm.f2e.mogujie.org/he/download/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha1-hK5l+n6vsWX922FWauFLrwVmTw8=
@@ -3284,6 +3316,29 @@ http-errors@~1.6.2:
     inherits "2.0.3"
     setprototypeof "1.1.0"
     statuses ">= 1.4.0 < 2"
+
+http-proxy@^1.8.1:
+  version "1.17.0"
+  resolved "http://npm.f2e.mogujie.org/http-proxy/download/http-proxy-1.17.0.tgz#7ad38494658f84605e2f6db4436df410f4e5be9a"
+  integrity sha1-etOElGWPhGBeL220Q230EPTlvpo=
+  dependencies:
+    eventemitter3 "^3.0.0"
+    follow-redirects "^1.0.0"
+    requires-port "^1.0.0"
+
+http-server@^0.11.1:
+  version "0.11.1"
+  resolved "http://npm.f2e.mogujie.org/http-server/download/http-server-0.11.1.tgz#2302a56a6ffef7f9abea0147d838a5e9b6b6a79b"
+  integrity sha1-IwKlam/+9/mr6gFH2Dil6ba2p5s=
+  dependencies:
+    colors "1.0.3"
+    corser "~2.0.0"
+    ecstatic "^3.0.0"
+    http-proxy "^1.8.1"
+    opener "~1.4.0"
+    optimist "0.6.x"
+    portfinder "^1.0.13"
+    union "~0.4.3"
 
 https-browserify@^1.0.0:
   version "1.0.0"
@@ -4338,6 +4393,11 @@ mime-types@^2.1.18, mime-types@~2.1.18:
   dependencies:
     mime-db "~1.36.0"
 
+mime@^1.6.0:
+  version "1.6.0"
+  resolved "http://npm.f2e.mogujie.org/mime/download/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
+  integrity sha1-Ms2eXGRVO9WNGaVor0Uqz/BJgbE=
+
 mime@^2.0.3, mime@^2.3.1:
   version "2.3.1"
   resolved "http://npm.f2e.mogujie.org/mime/download/mime-2.3.1.tgz#b1621c54d63b97c47d3cfe7f7215f7d64517c369"
@@ -4394,10 +4454,15 @@ minimist@0.0.8:
   resolved "http://npm.f2e.mogujie.org/minimist/download/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
   integrity sha1-hX/Kv8M5fSYluCKCYuhqp6ARsF0=
 
-minimist@^1.2.0:
+minimist@^1.1.0, minimist@^1.2.0:
   version "1.2.0"
   resolved "http://npm.f2e.mogujie.org/minimist/download/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
   integrity sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
+
+minimist@~0.0.1:
+  version "0.0.10"
+  resolved "http://npm.f2e.mogujie.org/minimist/download/minimist-0.0.10.tgz#de3f98543dbf96082be48ad1a0c7cda836301dcf"
+  integrity sha1-3j+YVD2/lggr5IrRoMfNqDYwHc8=
 
 minipass@^2.2.1, minipass@^2.3.3:
   version "2.3.4"
@@ -4797,12 +4862,25 @@ only@~0.0.2:
   resolved "http://npm.f2e.mogujie.org/only/download/only-0.0.2.tgz#2afde84d03e50b9a8edc444e30610a70295edfb4"
   integrity sha1-Kv3oTQPlC5qO3EROMGEKcCle37Q=
 
+opener@~1.4.0:
+  version "1.4.3"
+  resolved "http://npm.f2e.mogujie.org/opener/download/opener-1.4.3.tgz#5c6da2c5d7e5831e8ffa3964950f8d6674ac90b8"
+  integrity sha1-XG2ixdflgx6P+jlklQ+NZnSskLg=
+
 opn@^5.1.0:
   version "5.4.0"
   resolved "http://npm.f2e.mogujie.org/opn/download/opn-5.4.0.tgz#cb545e7aab78562beb11aa3bfabc7042e1761035"
   integrity sha1-y1Reeqt4VivrEao7+rxwQuF2EDU=
   dependencies:
     is-wsl "^1.1.0"
+
+optimist@0.6.x:
+  version "0.6.1"
+  resolved "http://npm.f2e.mogujie.org/optimist/download/optimist-0.6.1.tgz#da3ea74686fa21a19a111c326e90eb15a0196686"
+  integrity sha1-2j6nRob6IaGaERwybpDrFaAZZoY=
+  dependencies:
+    minimist "~0.0.1"
+    wordwrap "~0.0.2"
 
 optimize-css-assets-webpack-plugin@^4.0.0:
   version "4.0.3"
@@ -5438,6 +5516,11 @@ q@^1.1.2:
   resolved "http://npm.f2e.mogujie.org/q/download/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
 
+qs@~2.3.3:
+  version "2.3.3"
+  resolved "http://npm.f2e.mogujie.org/qs/download/qs-2.3.3.tgz#e9e85adbe75da0bbe4c8e0476a086290f863b404"
+  integrity sha1-6eha2+ddoLvkyOBHaghikPhjtAQ=
+
 query-string@^4.1.0:
   version "4.3.4"
   resolved "http://npm.f2e.mogujie.org/query-string/download/query-string-4.3.4.tgz#bbb693b9ca915c232515b228b1a02b609043dbeb"
@@ -5724,6 +5807,11 @@ require-from-string@^2.0.1:
   version "2.0.2"
   resolved "http://npm.f2e.mogujie.org/require-from-string/download/require-from-string-2.0.2.tgz#89a7fdd938261267318eafe14f9c32e598c36909"
   integrity sha1-iaf92TgmEmcxjq/hT5wy5ZjDaQk=
+
+requires-port@^1.0.0:
+  version "1.0.0"
+  resolved "http://npm.f2e.mogujie.org/requires-port/download/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
+  integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
 resolve-cwd@^2.0.0:
   version "2.0.0"
@@ -6529,6 +6617,13 @@ union-value@^1.0.0:
     is-extendable "^0.1.1"
     set-value "^0.4.3"
 
+union@~0.4.3:
+  version "0.4.6"
+  resolved "http://npm.f2e.mogujie.org/union/download/union-0.4.6.tgz#198fbdaeba254e788b0efcb630bc11f24a2959e0"
+  integrity sha1-GY+9rrolTniLDvy2MLwR8kopWeA=
+  dependencies:
+    qs "~2.3.3"
+
 uniq@^1.0.1:
   version "1.0.1"
   resolved "http://npm.f2e.mogujie.org/uniq/download/uniq-1.0.1.tgz#b31c5ae8254844a3a8281541ce2b04b865a734ff"
@@ -6620,6 +6715,11 @@ url-join@3.0.0:
   version "3.0.0"
   resolved "http://npm.f2e.mogujie.org/url-join/download/url-join-3.0.0.tgz#26e8113ace195ea30d0fc38186e45400f9cea672"
   integrity sha1-JugROs4ZXqMND8OBhuRUAPnOpnI=
+
+url-join@^2.0.5:
+  version "2.0.5"
+  resolved "http://npm.f2e.mogujie.org/url-join/download/url-join-2.0.5.tgz#5af22f18c052a000a48d7b82c5e9c2e2feeda728"
+  integrity sha1-WvIvGMBSoACkjXuCxenC4v7tpyg=
 
 url-loader@^1.0.1:
   version "1.1.2"
@@ -7031,6 +7131,11 @@ widest-line@^2.0.0:
   integrity sha1-dDh2RzDsfvQ4HOTfgvuYpTFCo/w=
   dependencies:
     string-width "^2.1.1"
+
+wordwrap@~0.0.2:
+  version "0.0.3"
+  resolved "http://npm.f2e.mogujie.org/wordwrap/download/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
+  integrity sha1-o9XabNXAvAAI03I0u68b7WMFkQc=
 
 workbox-background-sync@^3.6.2:
   version "3.6.2"
