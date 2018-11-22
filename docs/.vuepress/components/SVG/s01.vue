@@ -1,10 +1,10 @@
 <template>
     <div class="s01">
         <div class="svg-wrapper">
-            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+            <svg height="60" width="350" xmlns="http://www.w3.org/2000/svg">
                 <rect class="shape" height="60" width="320" />
             </svg>
-            <div class="text">SVG</div>
+            <div class="text">SVG可伸缩矢量图</div>
         </div>
     </div>
 </template>
@@ -17,7 +17,8 @@ export default {};
 <style scoped>
 .s01 {
     width: 700px;
-    height: 150px;
+    height: 350px;
+    border-radius: 4px;
     background: #a53f3c;
 }
 .svg-wrapper {
@@ -27,25 +28,26 @@ export default {};
   top: 50%;
   text-align: center;
   transform: translateY(-50%);
-  width: 320px;
+  width: 420px;
 }
 
 .shape {
   fill: transparent;
   stroke-dasharray: 140 540;
   stroke-dashoffset: -474;
-  stroke-width: 8px;
+  stroke-width: 6px;
   stroke: #ffff00;
 }
 
 .text {
   color: #fff;
   font-family: "Roboto Condensed";
-  font-size: 32px;
-  letter-spacing: 8px;
+  font-size: 28px;
+  letter-spacing: 5px;
   line-height: 32px;
   position: relative;
   top: -48px;
+  left: -10px;
 }
 
 @keyframes draw {
