@@ -17,7 +17,7 @@
                 </text>
                 <circle cx="80" cy="80" r="2" stroke="none" fill="red"></circle>
 
-                <text x="400" y="140" style="font-size: 14px; font-weight: bold; text-anchor: end">Large Arc Sweep Flag: 0</text>
+                <text x="400" y="140" style="font-size: 14px; font-weight: bold; text-anchor: end">Large Arc Sweep Flag: 1</text>
                 <text x="400" y="160" style="font-size: 14px; font-weight: bold; text-anchor: end">sweep-falg: 1</text>
             </g>
 
