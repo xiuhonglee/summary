@@ -8,6 +8,7 @@
                     values="yellow;green;purple;red"
                     keyTimes="0; 0.8; 0.9; 1"
                     dur="8s"
+                    repeatCount="indefinite"
                     fill="freeze"
                 ></animate>
             </rect>

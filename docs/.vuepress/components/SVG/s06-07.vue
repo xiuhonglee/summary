@@ -7,6 +7,7 @@
                     attributeName="fill"
                     from="#ffaa00"
                     to="#ff0000"
+                    repeatCount="indefinite"
                     dur="5s"
                     fill="freeze"
                 ></animate>

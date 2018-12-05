@@ -7,6 +7,7 @@
                     attributeType="CSS"
                     to="visible"
                     begin="3s"
+                    repeatCount="indefinite"
                     fill="freeze"
                 ></set>
                 Test &lt;set&gt; visibility attribute

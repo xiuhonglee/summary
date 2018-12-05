@@ -10,6 +10,7 @@
                     to="150"
                     dur="10s"
                     end="6s"
+                    repeatCount="indefinite"
                     fill="freeze"
                 ></animate>
             </rect>

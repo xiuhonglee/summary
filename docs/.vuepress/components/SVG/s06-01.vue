@@ -9,11 +9,20 @@
                     to="60"
                     begin="0s"
                     dur="5s"
+                    repeatCount="indefinite"
                     fill="freeze"
                 ></animate>
             </circle>
             <rect x="200" y="60" width="50" height="100" fill="#ffaa00">
-                <animate attributeName="width" attributeType="CSS" from="50" to="150" dur="5s" fill="remove"></animate>
+                <animate
+                    attributeName="width"
+                    attributeType="CSS"
+                    from="50"
+                    to="150"
+                    dur="5s"
+                    repeatCount="indefinite"
+                    fill="remove"
+                ></animate>
             </rect>
         </svg>
     </div>

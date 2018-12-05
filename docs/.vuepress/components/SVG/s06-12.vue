@@ -13,6 +13,7 @@
                         additive="sum"
                         begin="0s"
                         dur="4s"
+                        repeatCount="indefinite"
                         fill="freeze"
                     ></animateTransform>
                     <animateTransform
@@ -24,6 +25,7 @@
                         additive="sum"
                         begin="0s"
                         dur="4s"
+                        repeatCount="indefinite"
                         fill="freeze"
                     ></animateTransform>
                 </rect>

@@ -9,6 +9,7 @@
                     to="60,50 460,50 360,170 150,170"
                     begin="0s"
                     dur="5s"
+                    repeatCount="indefinite"
                     fill="freeze"
                 ></animate>
             </polygon>

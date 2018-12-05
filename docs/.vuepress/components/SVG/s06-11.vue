@@ -10,6 +10,7 @@
                     to="4 2"
                     begin="0s"
                     dur="4s"
+                    repeatCount="indefinite"
                     fill="freeze"
                 >
                 </animateTransform>

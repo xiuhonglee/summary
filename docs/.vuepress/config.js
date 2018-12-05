@@ -18,6 +18,7 @@ module.exports = {
     },
     themeConfig: {
         editLinks: true,
+        // displayAllHeaders: true,
         docsDir: 'docs',
         lastUpdated: '上次更新',
         editLinks: true,
@@ -26,30 +27,30 @@ module.exports = {
                 link: '/'
             },
             {
-                text: 'Canvas',
-                items: [{
-                    text: '图形绘制',
+                text: '前端开发',
+                items:[{
+                    text: 'Canvas',
                     link: '/Canvas_ch01/'
                 }, {
-                    text: '文本',
-                    link: '/Canvas_ch02/'
-                }],
+                    text: 'webGL',
+                    link: '/webGL'
+                }, {
+                    text: 'CSS3',
+                    link: '/CSS3/c02'
+                }, {
+                    text: 'SVG',
+                    link: '/SVG/s01'
+                }]
             },
             {
-                text: 'webGL',
-                link: '/webGL/'
-            },
-            {
-                text: 'CSS3',
-                link: '/CSS3/c02'
-            },
-            {
-                text: 'SVG',
-                link: '/SVG/s01'
-            },
-            {
-                text: 'Nginx',
-                link: '/Nginx/n01'
+                text: '服务端开发',
+                items: [{
+                    text: 'Node',
+                    link: '/Node/'
+                }, {
+                    text: 'Nginx',
+                    link: '/Nginx/n01'
+                }]
             },
             {
                 text: 'MySQL',
@@ -57,8 +58,7 @@ module.exports = {
             }
         ],
         sidebar: {
-            '/Canvas_ch01/': ['d01', 'd02', 'd03', 'd04', 'd05', 'd06', 'd07', 'd08', 'd09', 'd10'],
-            '/Canvas_ch02/': ['t01', 't02', 't03'],
+            '/Canvas_ch01/': ['d01', 'd02'],
             '/CSS3/': ['c02', 'c03', 'c04', 'c05'],
             '/SVG/': ['s01', 's02', 's03', 's04', 's05', 's06', 's07'],
             '/Nginx/': ['n01', 'n02', 'n03', 'n04', 'n05'],

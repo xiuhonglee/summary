@@ -10,6 +10,7 @@
                     from="30"
                     to="60"
                     dur="5s"
+                    repeatCount="indefinite"
                     fill="freeze"
                 ></animate>
             </circle>
@@ -21,6 +22,7 @@
                     to="150"
                     dur="10s"
                     end="a1.end"
+                    repeatCount="indefinite"
                     fill="freeze"
                 ></animate>
             </rect>
