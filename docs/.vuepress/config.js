@@ -1,6 +1,6 @@
 module.exports = {
     base: '/',
-    title: '程序设计开发',
+    title: '学习总结',
     description: '学习实践总结',
     markdown: {
         lineNumbers: true,
@@ -63,7 +63,7 @@ module.exports = {
         sidebar: {
             '/Canvas/': ['d01', 'd02'],
             '/CSS3/': ['c02', 'c03', 'c04', 'c05'],
-            '/SVG/': ['s01', 's01-01', 's02', 's03', 's04', 's05', 's06', 's07'],
+            '/SVG/': ['s01', 's01-01', 's01-02', 's02', 's03', 's04', 's05', 's06', 's07'],
             '/Nginx/': ['n01', 'n02', 'n03', 'n04', 'n05'],
             '/MySQL/': ['m01', 'm02']
         }
