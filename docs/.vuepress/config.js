@@ -1,6 +1,6 @@
 module.exports = {
     base: '/',
-    title: '计算机科学与技术',
+    title: '程序设计开发',
     description: '学习实践总结',
     markdown: {
         lineNumbers: true,
@@ -27,10 +27,10 @@ module.exports = {
             link: '/'
         },
         {
-            text: '前端开发',
+            text: '前端相关',
             items: [{
                 text: 'Canvas',
-                link: '/Canvas_ch01/'
+                link: '/Canvas/'
             }, {
                 text: 'webGL',
                 link: '/webGL'
@@ -43,7 +43,7 @@ module.exports = {
             }]
         },
         {
-            text: '服务端开发',
+            text: '服务端相关',
             items: [{
                 text: 'Node',
                 link: '/Node/'
@@ -61,7 +61,7 @@ module.exports = {
         }
         ],
         sidebar: {
-            '/Canvas_ch01/': ['d01', 'd02'],
+            '/Canvas/': ['d01', 'd02'],
             '/CSS3/': ['c02', 'c03', 'c04', 'c05'],
             '/SVG/': ['s01', 's01-01', 's02', 's03', 's04', 's05', 's06', 's07'],
             '/Nginx/': ['n01', 'n02', 'n03', 'n04', 'n05'],
