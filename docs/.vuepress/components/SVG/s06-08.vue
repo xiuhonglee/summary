@@ -7,12 +7,15 @@
                     attributeName="points"
                     attributeType="XML"
                     to="60,50 460,50 360,170 150,170"
-                    begin="0s"
+                    begin="button8.click"
                     dur="5s"
-                    repeatCount="indefinite"
                     fill="freeze"
                 ></animate>
             </polygon>
+            <g id="button8" style="cursor: pointer;">
+                <rect x="400" y="150" width="80" rx="5" ry="5" height="30" fill="#44ae7d"></rect>
+                <text x="422" y="170" style="text-anchor: start; fill: #fff">Start</text>
+            </g>
         </svg>
     </div>
 </template>

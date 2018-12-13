@@ -5,13 +5,17 @@
             <rect x="110" y="70" width="250" height="100" fill="yellow">
                 <animate
                     attributeName="fill"
+                    begin="button9.click"
                     values="yellow;green;purple;red"
                     keyTimes="0; 0.8; 0.9; 1"
                     dur="8s"
-                    repeatCount="indefinite"
                     fill="freeze"
                 ></animate>
             </rect>
+            <g id="button9" style="cursor: pointer;">
+                <rect x="400" y="150" width="80" rx="5" ry="5" height="30" fill="#44ae7d"></rect>
+                <text x="422" y="170" style="text-anchor: start; fill: #fff">Start</text>
+            </g>
         </svg>
     </div>
 </template>

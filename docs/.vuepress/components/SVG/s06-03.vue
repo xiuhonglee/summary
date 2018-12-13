@@ -4,13 +4,12 @@
             <circle cx="100" cy="110" r="30" style="fill: #ff5777;">
                 <animate
                     id="a1"
-                    begin="0s"
+                    begin="button3.click"
                     attributeName="r"
                     attributeType="XML"
                     from="30"
                     to="60"
-                    dur="5s"
-                    repeatCount="indefinite"
+                    dur="2s"
                     fill="freeze"
                 ></animate>
             </circle>
@@ -18,14 +17,18 @@
                 <animate
                     attributeName="width"
                     attributeType="CSS"
+                    begin="button3.click"
                     from="50"
                     to="150"
-                    dur="10s"
-                    end="a1.end"
-                    repeatCount="indefinite"
+                    dur="1s"
                     fill="freeze"
                 ></animate>
             </rect>
+
+            <g id="button3" style="cursor: pointer;">
+                <rect x="400" y="150" width="80" rx="5" ry="5" height="30" fill="#44ae7d"></rect>
+                <text x="422" y="170" style="text-anchor: start; fill: #fff">Start</text>
+            </g>
         </svg>
     </div>
 </template>

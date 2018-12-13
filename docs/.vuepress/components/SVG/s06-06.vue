@@ -7,6 +7,7 @@
                     id="anim1"
                     attributeName="width"
                     attributeType="CSS"
+                    begin="button6.click"
                     from="50"
                     to="150"
                     dur="3s"
@@ -26,6 +27,10 @@
                     repeatDur="5s"
                 ></animate>
             </circle>
+            <g id="button6" style="cursor: pointer;">
+                <rect x="400" y="150" width="80" rx="5" ry="5" height="30" fill="#44ae7d"></rect>
+                <text x="422" y="170" style="text-anchor: start; fill: #fff">Start</text>
+            </g>
         </svg>
     </div>
 </template>

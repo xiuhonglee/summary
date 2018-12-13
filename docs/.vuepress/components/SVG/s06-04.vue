@@ -5,15 +5,19 @@
                 <animate
                     attributeName="width"
                     attributeType="CSS"
-                    begin="2s"
+                    begin="button4.click"
                     from="50"
                     to="150"
-                    dur="10s"
-                    end="6s"
-                    repeatCount="indefinite"
+                    dur="1s"
+                    end="begin+0.5"
                     fill="freeze"
                 ></animate>
             </rect>
+
+            <g id="button4" style="cursor: pointer;">
+                <rect x="400" y="150" width="80" rx="5" ry="5" height="30" fill="#44ae7d"></rect>
+                <text x="422" y="170" style="text-anchor: start; fill: #fff">Start</text>
+            </g>
         </svg>
     </div>
 </template>

@@ -7,9 +7,8 @@
                     attributeType="XML"
                     from="30"
                     to="60"
-                    begin="0s"
-                    dur="5s"
-                    repeatCount="indefinite"
+                    begin="button.click"
+                    dur="1s"
                     fill="freeze"
                 ></animate>
             </circle>
@@ -17,13 +16,17 @@
                 <animate
                     attributeName="width"
                     attributeType="CSS"
+                    begin="button.click"
                     from="50"
                     to="150"
-                    dur="5s"
-                    repeatCount="indefinite"
+                    dur="1s"
                     fill="remove"
                 ></animate>
             </rect>
+            <g id="button" style="cursor: pointer;">
+                <rect x="400" y="150" width="80" rx="5" ry="5" height="30" fill="#44ae7d"></rect>
+                <text x="422" y="170" style="text-anchor: start; fill: #fff">Start</text>
+            </g>
         </svg>
     </div>
 </template>

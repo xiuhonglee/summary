@@ -6,12 +6,15 @@
                     attributeName="visibility"
                     attributeType="CSS"
                     to="visible"
-                    begin="3s"
-                    repeatCount="indefinite"
+                    begin="button10.click"
                     fill="freeze"
                 ></set>
                 Test &lt;set&gt; visibility attribute
             </text>
+            <g id="button10" style="cursor: pointer;">
+                <rect x="400" y="150" width="80" rx="5" ry="5" height="30" fill="#44ae7d"></rect>
+                <text x="422" y="170" style="text-anchor: start; fill: #fff">Start</text>
+            </g>
         </svg>
     </div>
 </template>

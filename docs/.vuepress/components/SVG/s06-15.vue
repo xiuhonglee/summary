@@ -5,16 +5,20 @@
             <path d="M-10,-3 L10,-3 L0,-25z" fill="yellow" stroke="red">
                 <animateMotion
                     rotate="auto"
+                    begin="button15.click"
                     dur="6s"
                     keyPoints="0;0.3;0.9;1"
                     keyTimes="0;0.5;0.8;1"
-                    repeatCount="indefinite"
                     calcMode="linear"
                     fill="freeze"
                 >
                     <mpath xlink:href="#cubicCurve"></mpath>
                 </animateMotion>
             </path>
+            <g id="button15" style="cursor: pointer;">
+                <rect x="400" y="150" width="80" rx="5" ry="5" height="30" fill="#44ae7d"></rect>
+                <text x="422" y="170" style="text-anchor: start; fill: #fff">Start</text>
+            </g>
         </svg>
     </div>
 </template>
