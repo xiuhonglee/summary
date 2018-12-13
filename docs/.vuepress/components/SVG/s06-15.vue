@@ -1,7 +1,7 @@
 <template>
     <div class="s06-15">
         <svg width="520px" height="200px" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <path id="cubicCurve" d="M50,125 C100,25 150,225 200,125" fill="none" stroke="red"></path>
+            <path id="cubicCurve3" d="M50,125 C100,25 150,225 200,125" fill="none" stroke="red"></path>
             <path d="M-10,-3 L10,-3 L0,-25z" fill="yellow" stroke="red">
                 <animateMotion
                     rotate="auto"
@@ -12,7 +12,7 @@
                     calcMode="linear"
                     fill="freeze"
                 >
-                    <mpath xlink:href="#cubicCurve"></mpath>
+                    <mpath xlink:href="#cubicCurve3"></mpath>
                 </animateMotion>
             </path>
             <g id="button15" style="cursor: pointer;">

@@ -1,10 +1,10 @@
 <template>
     <div class="s06-14">
         <svg width="520px" height="200px" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <path id="cubicCurve" d="M50,125 C100,25 150,225 200,125" fill="none" stroke="red"></path>
+            <path id="cubicCurve2" d="M50,125 C100,25 150,225 200,125" fill="none" stroke="red"></path>
             <path d="M-10,-3 L10,-3 L0,-25z" fill="yellow" stroke="red">
                 <animateMotion rotate="auto" begin="button14.click" dur="6s" fill="freeze">
-                    <mpath xlink:href="#cubicCurve"></mpath>
+                    <mpath xlink:href="#cubicCurve2"></mpath>
                 </animateMotion>
             </path>
             <g id="button14" style="cursor: pointer;">
