@@ -81,8 +81,8 @@ export default {
 
 <style scoped>
 canvas {
-    width: 250px;
-    height: 150px;
+    width: 500px;
+    height: 200px;
     margin: 15px 0;
     box-shadow: 0 0 2px 3px #eee;
 }

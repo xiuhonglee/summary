@@ -30,7 +30,7 @@ module.exports = {
             text: '前端相关',
             items: [{
                 text: 'Canvas',
-                link: '/Canvas/'
+                link: '/Canvas/d01'
             }, {
                 text: 'webGL',
                 link: '/webGL'

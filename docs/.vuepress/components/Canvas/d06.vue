@@ -1,5 +1,5 @@
 <template>
-    <canvas ref="canvas" width="500" height="300"></canvas>
+    <canvas ref="canvas" width="500" height="200"></canvas>
 </template>
 
 <script>
@@ -15,11 +15,38 @@ export default {
     mounted() {
         this.canvas = this.$refs.canvas;
         this.ctx = this.canvas.getContext("2d");
-        this.drawImg();
 
-        this.drawCoordinate(this.ctx, "#aaa", 25, 25);
-        this.drawCenterLines(this.ctx, "#ff0000");
-        this.drawAxis();
+        // without closepath
+        this.ctx.moveTo(80, 50);
+        this.ctx.lineTo(50, 120);
+        this.ctx.lineTo(150, 120);
+        this.ctx.stroke();
+
+        // width closepath
+        // this.ctx.beginPath();
+        this.ctx.moveTo(280, 50);
+        this.ctx.lineTo(250, 120);
+        this.ctx.lineTo(350, 120);
+        this.ctx.closePath();
+        this.ctx.stroke();
+
+        this.ctx.font = "12px Arial";
+        this.ctx.fillStyle = "#000000";
+        this.ctx.fillText("A", 80, 45);
+        this.ctx.fillText("B", 35, 125);
+        this.ctx.fillText("C", 155, 125);
+
+        this.ctx.fillText("A", 280, 45);
+        this.ctx.fillText("B", 235, 125);
+        this.ctx.fillText("C", 355, 125);
+        this.ctx.fillText("closePath:", 50, 160);
+        this.ctx.fillText("closePath:", 250, 160);
+        this.ctx.save();
+
+        this.ctx.fillStyle = "#ff0000";
+        this.ctx.fillText("no", 120, 160);
+        this.ctx.fillText("yes", 320, 160);
+
     },
     methods: {
         drawImg() {
@@ -81,8 +108,8 @@ export default {
 
 <style scoped>
 canvas {
-    width: 250px;
-    height: 150px;
+    width: 500px;
+    height: 200px;
     margin: 15px 0;
     box-shadow: 0 0 2px 3px #eee;
 }
