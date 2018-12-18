@@ -41,10 +41,6 @@ export default {
     },
 
     methods: {
-        handleClick() {
-            this.initAB();
-        },
-
         setupCanvas() {
             let rect = this.canvas.getBoundingClientRect();
             this.canvas.width = rect.width * this.dpr;
