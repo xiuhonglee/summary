@@ -19,10 +19,11 @@ export default {
             ctx: null,
             pattern: null,
             patternOption: "repeat",
-            image: new Image
+            image: null
         };
     },
     mounted() {
+        this.image = new Image();
         this.canvas = this.$refs.canvas;
         this.dpr = window.devicePixelRatio || 1;
 
