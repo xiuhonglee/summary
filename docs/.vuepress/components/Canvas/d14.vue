@@ -4,19 +4,27 @@
         <div class="rangeGroup" v-if="canvas">
             <div class="axPoint" v-if="canvas">
                 <span>ax:</span>
-                <input type="range" min="0" :max="canvas.width" step="1" v-model="ax">
+                <input type="range" min="0" :max="initialWidth" step="1" v-model="ax">
             </div>
             <div class="ayPoint" v-if="canvas">
                 <span>ay:</span>
-                <input type="range" min="0" :max="canvas.height" step="1" v-model="ay">
+                <input type="range" min="0" :max="initialHeight" step="1" v-model="ay">
+            </div>
+            <div class="ar" v-if="canvas">
+                <span>ar:</span>
+                <input type="range" min="0" max="100" step="1" v-model="ar">
             </div>
             <div class="bxPoint" v-if="canvas">
                 <span>bx:</span>
-                <input type="range" min="0" :max="canvas.width" step="1" v-model="bx">
+                <input type="range" min="0" :max="initialWidth" step="1" v-model="bx">
             </div>
             <div class="byPoint" v-if="canvas">
                 <span>by:</span>
-                <input type="range" min="0" :max="canvas.height" step="1" v-model="by">
+                <input type="range" min="0" :max="initialHeight" step="1" v-model="by">
+            </div>
+            <div class="br" v-if="canvas">
+                <span>br:</span>
+                <input type="range" min="0" max="100" step="1" v-model="br">
             </div>
         </div>
         <div class="btn" @click="handleClick">重置</div>
@@ -30,6 +38,12 @@ export default {
             canvas: null,
             ctx: null,
             gradient: null,
+            initialWidth: 500,
+            initialHeight: 200,
+            rectOffsetX: 30,
+            rectOffsetY: 30,
+            rectWidth: 280,
+            rectHeight: 140,
             dpr: 1,
             ax: 0,
             ay: 0,
@@ -61,15 +75,23 @@ export default {
         },
         by() {
             this.redraw();
+        },
+        ar() {
+            this.redraw();
+        },
+        br() {
+            this.redraw();
         }
     },
 
     methods: {
         initAB() {
-            this.ax = 0;
-            this.ay = this.canvas.height / 2;
-            this.bx = this.canvas.width;
-            this.by = this.canvas.height / 2;
+            this.ax = this.rectOffsetX + this.rectWidth / 2;
+            this.ay = this.rectOffsetY + this.rectHeight;
+            this.bx = this.rectOffsetX + this.rectWidth / 2;
+            this.by = 0;
+            this.ar = 10;
+            this.br = 100;
         },
 
         handleClick() {
@@ -85,28 +107,35 @@ export default {
         },
 
         draw() {
-            this.gradient = this.ctx.createLinearGradient(
+            this.gradient = this.ctx.createRadialGradient(
                 this.ax,
                 this.ay,
+                this.ar,
+
                 this.bx,
-                this.by
+                this.by,
+                this.br
             );
+
             this.gradient.addColorStop(0, "blue");
             this.gradient.addColorStop(0.25, "white");
             this.gradient.addColorStop(0.5, "purple");
             this.gradient.addColorStop(0.75, "red");
             this.gradient.addColorStop(1, "yellow");
             this.ctx.fillStyle = this.gradient;
-            this.ctx.fillRect(30, 30, 280, 140);
+            this.ctx.fillRect(this.rectOffsetX, this.rectOffsetY, this.rectWidth, this.rectHeight);
 
-            this.ctx.save();
-            this.ctx.lineWidth = 1;
-            this.ctx.strokeStyle = "cyan";
+            // 辅助线
             this.ctx.beginPath();
-            this.ctx.moveTo(this.ax / this.dpr, this.ay / this.dpr);
-            this.ctx.lineTo(this.bx / this.dpr, this.by / this.dpr);
+            this.ctx.strokeRect(this.rectOffsetX, this.rectOffsetY, this.rectWidth, this.rectHeight);
+
+            this.ctx.beginPath();
+            this.ctx.arc(this.ax, this.ay, this.ar, 0, 2 * Math.PI, false);
             this.ctx.stroke();
-            this.ctx.restore();
+
+            this.ctx.beginPath();
+            this.ctx.arc(this.bx, this.by, this.br, 0, 2 * Math.PI, false);
+            this.ctx.stroke();
         },
 
         redraw() {
@@ -138,7 +167,7 @@ canvas {
 }
 
 .bxPoint {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .btn {
     position: absolute;
