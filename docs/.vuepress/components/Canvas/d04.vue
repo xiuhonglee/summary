@@ -44,22 +44,22 @@ export default {
 
         drawCenterLines(ctx, color) {
             ctx.strokeStyle = color;
-            ctx.lineWidth = 0.5;
+            ctx.lineWidth = 1;
 
             ctx.beginPath();
-            ctx.moveTo(ctx.canvas.width / 2, 0);
-            ctx.lineTo(ctx.canvas.width / 2, ctx.canvas.height);
+            ctx.moveTo(ctx.canvas.width / 2 + 0.5, 0);
+            ctx.lineTo(ctx.canvas.width / 2 + 0.5, ctx.canvas.height);
             ctx.stroke();
 
             ctx.beginPath();
-            ctx.moveTo(0, ctx.canvas.height / 2);
-            ctx.lineTo(ctx.canvas.width, ctx.canvas.height / 2);
+            ctx.moveTo(0, ctx.canvas.height / 2 + 0.5);
+            ctx.lineTo(ctx.canvas.width, ctx.canvas.height / 2 + 0.5);
             ctx.stroke();
         },
 
         drawCoordinate(ctx, color, stepX, stepY) {
             ctx.strokeStyle = color;
-            ctx.lineWidth = 0.5;
+            ctx.lineWidth = 1;
             for (let i = stepX + 0.5; i < this.ctx.canvas.width; i += stepX) {
                 ctx.beginPath();
                 ctx.moveTo(i, 0);

@@ -36,7 +36,7 @@ export default {
             this.ctx.lineTo(150, 120);
             this.ctx.stroke();
 
-            if(withBeginPath === "yes") {
+            if (withBeginPath === "yes") {
                 this.ctx.beginPath();
             }
 

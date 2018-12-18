@@ -31,15 +31,15 @@ export default {
             this.ctx.save();
 
             this.ctx.moveTo(80, 50);
-            this.ctx.lineTo(50, 120);
-            this.ctx.lineTo(150, 120);
+            this.ctx.lineTo(50, 120.5);
+            this.ctx.lineTo(150, 120.5);
             this.ctx.restore();
             this.ctx.stroke();
 
             this.ctx.beginPath();
             this.ctx.moveTo(230, 50);
-            this.ctx.lineTo(200, 120);
-            this.ctx.lineTo(300, 120);
+            this.ctx.lineTo(200, 120.5);
+            this.ctx.lineTo(300, 120.5);
             this.ctx.restore();
             this.ctx.stroke();
         }
