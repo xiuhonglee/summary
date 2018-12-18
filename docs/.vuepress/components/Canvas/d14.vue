@@ -184,4 +184,7 @@ canvas {
     cursor: pointer;
     background-color: #ff5777;
 }
+.axPoint, .ayPoint, .ar, .bxPoint, .byPoint, .br {
+    line-height: 1;
+}
 </style>
