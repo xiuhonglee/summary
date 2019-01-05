@@ -1,7 +1,7 @@
 <template>
     <div class="wrap" style="relative">
         <canvas ref="canvas" width="500" height="200"></canvas>
-        <div class="btn" @click="handleClick">{{btnText}}</div>
+        <!-- <div class="btn" @click="handleClick">{{btnText}}</div> -->
     </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
             ctx: null,
             dpr: 1,
             btnText: "clip",
-            isClip: false
+            isClip: true
         };
     },
     mounted() {
@@ -34,25 +34,17 @@ export default {
         },
 
         draw() {
-            this.ctx.save(); // important
-            if (this.isClip) {
-                this.ctx.beginPath();
-                this.ctx.arc(100, 75, 50, 0, Math.PI * 2, false);
-                this.ctx.clip();
-            }
 
-            this.ctx.fillStyle = "purple";
+            this.ctx.fillStyle = "#ffffff";
             this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
             this.ctx.fillStyle = "red";
-            this.ctx.beginPath();
             this.ctx.fillRect(100, 50, 300, 100);
 
-            this.ctx.strokeStyle = "#fff";
-            this.ctx.beginPath();
             this.ctx.arc(100, 75, 50, 0, Math.PI * 2, false);
-            this.ctx.stroke();
-            this.ctx.restore(); // important
+            this.ctx.clip();
+            this.ctx.fillStyle = "#ffffff";
+            this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
         },
 
         redraw() {
@@ -61,7 +53,7 @@ export default {
         },
 
         handleClick() {
-            this.isClip = !this.isClip;
+            // this.isClip = !this.isClip;
             this.redraw();
         }
     }

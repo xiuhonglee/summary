@@ -63,6 +63,7 @@ export default {
         },
 
         handleClick() {
+            this.btnText = this.btnText === "clip" ? "reset" : "clip";
             this.isClip = !this.isClip;
             this.redraw();
         }
